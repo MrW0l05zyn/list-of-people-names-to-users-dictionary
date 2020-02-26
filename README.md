@@ -1,7 +1,11 @@
 # List of people names to users dictionary
 
-Usage: ListPeopleNamesToUsersDictionary.py &lt;list&gt;
+Usage:
+```
+ListPeopleNamesToUsersDictionary.py &lt;list&gt;
+```
 
+Example:
 ```
 python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt
 ```
