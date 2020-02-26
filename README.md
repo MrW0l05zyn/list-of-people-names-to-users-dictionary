@@ -2,7 +2,7 @@
 
 Usage:
 ```
-ListPeopleNamesToUsersDictionary.py &lt;list&gt;
+ListPeopleNamesToUsersDictionary.py <list>
 ```
 
 Example:
