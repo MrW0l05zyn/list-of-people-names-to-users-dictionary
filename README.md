@@ -2,7 +2,9 @@
 
 Usage: ListPeopleNamesToUsersDictionary.py <list>
 
+```
 Example: python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt
+```
 
 Positional arguments:
   <list>         list of people names
