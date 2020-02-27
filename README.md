@@ -2,22 +2,23 @@
 
 Herramienta que permite generar a partir de una lista de nombres de personas un diccionario de usuarios, basándose en convenciones de nomenclaturas típicas, utilizadas por los administradores de sistemas (SysAdmin) al momento de crear cuentas de usuario.
 
-Usage:
+Uso:
 ```
 ListPeopleNamesToUsersDictionary.py {list} [-o file]
 ```
 
-Example:
+Ejemplos:
 ```
 python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt
 python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt -o users-dictionary.txt
 ```
 
-Positional arguments:
+Argumentos posicionales:
 ```
   <list>         list of people names
 ```
-Optional arguments:
+
+Argumentos opcionales:
 ```
   -h, --help     show this help message and exit
   -o FILE        output users dictionary
