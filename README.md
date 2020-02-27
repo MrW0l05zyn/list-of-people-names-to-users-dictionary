@@ -2,12 +2,13 @@
 
 Usage:
 ```
-ListPeopleNamesToUsersDictionary.py <list>
+ListPeopleNamesToUsersDictionary.py {list} [-o file]
 ```
 
 Example:
 ```
 python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt
+python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt -o users-dictionary.txt
 ```
 
 Positional arguments:
@@ -17,5 +18,6 @@ Positional arguments:
 Optional arguments:
 ```
   -h, --help     show this help message and exit
-  -v, --version  show program's version number and exit
+  -o FILE        output users dictionary
+  -V, --version  show program's version number and exit
 ```
