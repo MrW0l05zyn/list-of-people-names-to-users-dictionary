@@ -27,6 +27,9 @@ for personas in archivo.readlines():
     nombre = persona[0]         #elliot
     apellido = persona[1]       #alderson
 
+    usersDictionary.append(nombre)                      #elliot
+    usersDictionary.append(apellido)                    #alderson
+
     usersDictionary.append(nombre + apellido)           #elliotalderson
     usersDictionary.append(apellido + nombre)           #aldersonelliot
 
@@ -55,9 +58,6 @@ for personas in archivo.readlines():
     usersDictionary.append(apellido[0] + '_' + nombre)  #a_elliot
     usersDictionary.append(nombre[0] + '-' + apellido)  #e-alderson
     usersDictionary.append(apellido[0] + '-' + nombre)  #a-elliot
-
-    usersDictionary.append(nombre)                      #elliot
-    usersDictionary.append(apellido)                    #alderson
 archivo.close()
 
 # guarda diccionario de usuario en archivo
