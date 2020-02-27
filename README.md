@@ -13,7 +13,7 @@ python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt
 python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt -o users-dictionary.txt
 ```
 
-## Argumentos posicionales
+## Argumentos obligatorios
 ```
   <list>         list of people names
 ```
