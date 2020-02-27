@@ -60,13 +60,13 @@ for personas in archivo.readlines():
     usersDictionary.append(apellido)                    #alderson
 archivo.close()
 
-# impresión de diccionario de usuarios
-for userName in usersDictionary:
-    print(userName)
-
 # guarda diccionario de usuario en archivo
 if argumentos.file:
     usersDictionaryFile = open(argumentos.file,"w") 
     for userName in usersDictionary:
         usersDictionaryFile.write("{0}\n".format(userName))
     usersDictionaryFile.close()
+else:
+    # impresión de diccionario de usuarios
+    for userName in usersDictionary:
+        print(userName)
