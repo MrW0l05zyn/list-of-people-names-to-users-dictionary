@@ -3,15 +3,19 @@ import argparse
 # variables
 usersDictionary = []
 
-# configuración de argumentos de linea de comandos
+# configuración de analizador
 analizador = argparse.ArgumentParser(
-    usage='%(prog)s <list>',
+    usage='%(prog)s {list} [-o file]',
     formatter_class=argparse.RawDescriptionHelpFormatter,
-    description='Example: ./%(prog)s list-people-names.txt',
+    description="""examples:
+
+    ./%(prog)s list-people-names.txt
+    ./%(prog)s list-people-names.txt -o users-dictionary.txt""",
     epilog=''
 )
 analizador.add_argument('list', action='store', help='list of people names', type=argparse.FileType('r'))
-analizador.add_argument('-v', '--version', action='version', version='Version: 0.1')
+analizador.add_argument('-o', action='store', help='output users dictionary', dest='file')
+analizador.add_argument('-V', '--version', action='version', version='Version: 0.1')
 
 # lectura de argumentos desde linea de comandos
 argumentos = analizador.parse_args()
@@ -56,6 +60,13 @@ for personas in archivo.readlines():
     usersDictionary.append(apellido)                    #alderson
 archivo.close()
 
-# impresión de usernames
+# impresión de diccionario de usuarios
 for userName in usersDictionary:
     print(userName)
+
+# guarda diccionario de usuario en archivo
+if argumentos.file:
+    usersDictionaryFile = open(argumentos.file,"w") 
+    for userName in usersDictionary:
+        usersDictionaryFile.write("{0}\n".format(userName))
+    usersDictionaryFile.close()
