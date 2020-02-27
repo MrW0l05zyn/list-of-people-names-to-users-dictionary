@@ -24,3 +24,39 @@ Argumentos opcionales:
   -o FILE        output users dictionary
   -V, --version  show program's version number and exit
 ```
+
+Ejemplo:
+
+* Entrada: 
+
+`Elliot Alderson`
+* Salida:
+
+```
+elliot
+alderson
+elliotalderson
+aldersonelliot
+elliot.alderson
+alderson.elliot
+elliot_alderson
+alderson_elliot
+elliot-alderson
+alderson-elliot
+elliota
+aldersone
+ealderson
+aelliot
+elliot.a
+alderson.e
+elliot_a
+alderson_e
+elliot-a
+alderson-e
+e.alderson
+a.elliot
+e_alderson
+a_elliot
+e-alderson
+a-elliot
+```
