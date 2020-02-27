@@ -6,7 +6,9 @@ Herramienta que permite generar a partir de una lista de nombres de personas un 
 
 * Entrada: 
 
-`Elliot Alderson`
+```
+Elliot Alderson
+```
 
 * Salida:
 
