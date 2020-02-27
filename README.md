@@ -7,7 +7,7 @@ Uso:
 ListPeopleNamesToUsersDictionary.py {list} [-o file]
 ```
 
-Ejemplos:
+Ejemplos de utilización:
 ```
 python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt
 python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt -o users-dictionary.txt
