@@ -25,7 +25,7 @@ python3 ./ListPeopleNamesToUsersDictionary.py list-people-names.txt -o users-dic
   -V, --version  show program's version number and exit
 ```
 
-## Ejemplo:
+## Ejemplo
 
 * Entrada: 
 
