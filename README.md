@@ -48,10 +48,10 @@ ListPeopleNamesToUsersDictionary.py [-n name] [-l list] [-o file]
 
 ## Ejemplos de utilización
 ```
-python3 ./ListPeopleNamesToUsersDictionary.py -n 'Elliot Alderson'
-python3 ./ListPeopleNamesToUsersDictionary.py -l list-people-names.txt
-python3 ./ListPeopleNamesToUsersDictionary.py -n 'Elliot Alderson' -o users-dictionary.txt
-python3 ./ListPeopleNamesToUsersDictionary.py -l list-people-names.txt -o users-dictionary.txt
+./ListPeopleNamesToUsersDictionary.py -n 'Elliot Alderson'
+./ListPeopleNamesToUsersDictionary.py -l list-people-names.txt
+./ListPeopleNamesToUsersDictionary.py -n 'Elliot Alderson' -o users-dictionary.txt
+./ListPeopleNamesToUsersDictionary.py -l list-people-names.txt -o users-dictionary.txt
 ```
 
 ## Argumentos
