@@ -6,7 +6,7 @@ usersDictionary = []
 
 # configuración de analizador
 analizador = argparse.ArgumentParser(
-    usage='%(prog)s [-n name] [-l list] [-o file]',
+    usage='%(prog)s [-n NAME] [-l LIST] [-o FILE]',
     formatter_class=argparse.RawDescriptionHelpFormatter,
     description="""examples:
 
