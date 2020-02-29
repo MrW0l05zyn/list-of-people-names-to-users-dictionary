@@ -16,6 +16,7 @@ analizador = argparse.ArgumentParser(
     ./%(prog)s -l list-people-names.txt -o users-dictionary.txt""",
     epilog=''
 )
+
 # argumentos de analizador
 analizador.add_argument('-n', '--name', action='store', help='name of person, example: \'Elliot Alderson\' (only first name and last name)', dest='name', type=str)
 analizador.add_argument('-l', '--list', action='store', help='list of people names, example: list-people-names.txt', dest='list', type=argparse.FileType('r'))
