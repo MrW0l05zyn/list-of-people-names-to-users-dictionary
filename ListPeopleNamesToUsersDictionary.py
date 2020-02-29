@@ -17,7 +17,7 @@ analizador = argparse.ArgumentParser(
     epilog=''
 )
 # argumentos de analizador
-analizador.add_argument('-n', '--name', action='store', help='name of person, example: \'Elliot Alderson\' (first name and last name)', dest='name', type=str)
+analizador.add_argument('-n', '--name', action='store', help='name of person, example: \'Elliot Alderson\' (only first name and last name)', dest='name', type=str)
 analizador.add_argument('-l', '--list', action='store', help='list of people names, example: list-people-names.txt', dest='list', type=argparse.FileType('r'))
 analizador.add_argument('-o', '--output', action='store', help='output users dictionary, example: users-dictionary.txt', dest='file', type=str)
 analizador.add_argument('-V', '--version', action='version', version='Version: 0.2')
@@ -69,7 +69,7 @@ if argumentos.name:
     if len(persona) == 2:
         ListPeopleNamesToUsersDictionary(persona[0], persona[1])
     else:
-        print('Format error: [-n/--name] Name of person, example: \'Elliot Alderson\' (first name and last name).')
+        print('Format error: [-n/--name] Name of person, example: \'Elliot Alderson\' (only first name and last name).')
         sys.exit()
 
 # argumento -l --list
@@ -81,17 +81,18 @@ if argumentos.list:
         if len(persona) == 2:
             ListPeopleNamesToUsersDictionary(persona[0], persona[1])
         else:
-            print('Format error: [-n/--name] Name of person, example: \'Elliot Alderson\' (first name and last name).')
+            print('Format error: [-n/--name] Name of person, example: \'Elliot Alderson\' (only first name and last name).')
             sys.exit()
     archivo.close()
 
-# guarda diccionario de usuario en archivo
+# argumento -o --output
 if argumentos.file:
+    # guarda diccionario de usuario en archivo
     usersDictionaryFile = open(argumentos.file,"w") 
     for userName in usersDictionary:
         usersDictionaryFile.write("{0}\n".format(userName))
     usersDictionaryFile.close()
 else:
-    # impresión de diccionario de usuarios
+    # impresión de diccionario de usuarios por pantalla
     for userName in usersDictionary:
         print(userName)
