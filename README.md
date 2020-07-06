@@ -56,9 +56,9 @@ ListPeopleNamesToUsersDictionary.py [-n name] [-l list] [-o file]
 
 ## Argumentos
 ```
-  -h, --help             show this help message and exit
-  -n NAME, --name NAME   name of person, example: 'Elliot Alderson' (only first name and last name)
-  -l LIST, --list LIST   list of people names, example: list-people-names.txt
-  -o FILE, --output FILE output users dictionary, example: users-dictionary.txt
-  -V, --version          show program's version number and exit
+-h, --help             show this help message and exit
+-n NAME, --name NAME   name of person, example: 'Elliot Alderson' (only first name and last name)
+-l LIST, --list LIST   list of people names, example: list-people-names.txt
+-o FILE, --output FILE output users dictionary, example: users-dictionary.txt
+-V, --version          show program's version number and exit
 ```
