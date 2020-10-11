@@ -21,7 +21,7 @@ analizador = argparse.ArgumentParser(
 analizador.add_argument('-n', '--name', action='store', help='name of person, example: \'Elliot Alderson\' (only first name and last name)', dest='name', type=str)
 analizador.add_argument('-l', '--list', action='store', help='list of people names, example: list-people-names.txt', dest='list', type=argparse.FileType('r'))
 analizador.add_argument('-o', '--output', action='store', help='output users dictionary, example: users-dictionary.txt', dest='file', type=str)
-analizador.add_argument('-V', '--version', action='version', version='Version: 0.2 by Marcelo Woloszyn Díaz (MrW0l05zyn)')
+analizador.add_argument('-V', '--version', action='version', version='Version: 0.2 by MrW0l05zyn')
 
 # lectura de argumentos desde linea de comandos
 argumentos = analizador.parse_args()
