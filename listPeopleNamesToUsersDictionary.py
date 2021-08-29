@@ -31,7 +31,7 @@ argumentos = analizador.parse_args()
 if not argumentos.name and not argumentos.list:
    analizador.print_help()
 
-def ListPeopleNamesToUsersDictionary(nombre, apellido):
+def listPeopleNamesToUsersDictionary(nombre, apellido):
     usersDictionary.append(nombre)                      #elliot
     usersDictionary.append(apellido)                    #alderson
 
@@ -69,7 +69,7 @@ if argumentos.name:
     persona = argumentos.name.lower().split()
     # validación de nombre y apellido
     if len(persona) == 2:
-        ListPeopleNamesToUsersDictionary(persona[0], persona[1])
+        listPeopleNamesToUsersDictionary(persona[0], persona[1])
     else:
         print('Format error: [-n/--name] Name of person, example: \'Elliot Alderson\' (only first name and last name).')
         sys.exit()
@@ -81,7 +81,7 @@ if argumentos.list:
         persona = personas.lower().split()
         # validación de nombre y apellido
         if len(persona) == 2:
-            ListPeopleNamesToUsersDictionary(persona[0], persona[1])
+            listPeopleNamesToUsersDictionary(persona[0], persona[1])
         else:
             print('Format error: [-n/--name] Name of person, example: \'Elliot Alderson\' (only first name and last name).')
             sys.exit()
