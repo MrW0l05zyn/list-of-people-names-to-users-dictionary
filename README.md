@@ -43,15 +43,15 @@ a-elliot
 
 ## Uso
 ```
-ListPeopleNamesToUsersDictionary.py [-n name] [-l list] [-o file]
+listPeopleNamesToUsersDictionary.py [-n name] [-l list] [-o file]
 ```
 
 ## Ejemplos de utilización
 ```
-./ListPeopleNamesToUsersDictionary.py -n 'Elliot Alderson'
-./ListPeopleNamesToUsersDictionary.py -l list-people-names.txt
-./ListPeopleNamesToUsersDictionary.py -n 'Elliot Alderson' -o users-dictionary.txt
-./ListPeopleNamesToUsersDictionary.py -l list-people-names.txt -o users-dictionary.txt
+./listPeopleNamesToUsersDictionary.py -n 'Elliot Alderson'
+./listPeopleNamesToUsersDictionary.py -l list-people-names.txt
+./listPeopleNamesToUsersDictionary.py -n 'Elliot Alderson' -o users-dictionary.txt
+./listPeopleNamesToUsersDictionary.py -l list-people-names.txt -o users-dictionary.txt
 ```
 
 ## Argumentos
