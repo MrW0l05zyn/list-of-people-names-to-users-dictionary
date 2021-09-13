@@ -55,7 +55,7 @@ listPeopleNamesToUsersDictionary.py [-n name] [-l list] [-o file]
 ```
 
 ## Argumentos
-```
+```python
 -h, --help             show this help message and exit
 -n NAME, --name NAME   name of person, example: 'Elliot Alderson' (only first name and last name)
 -l LIST, --list LIST   list of people names, example: list-people-names.txt
