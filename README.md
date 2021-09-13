@@ -42,12 +42,12 @@ a-elliot
 ```
 
 ## Uso
-```
+```python
 listPeopleNamesToUsersDictionary.py [-n name] [-l list] [-o file]
 ```
 
 ## Ejemplos de utilización
-```
+```python
 ./listPeopleNamesToUsersDictionary.py -n 'Elliot Alderson'
 ./listPeopleNamesToUsersDictionary.py -l list-people-names.txt
 ./listPeopleNamesToUsersDictionary.py -n 'Elliot Alderson' -o users-dictionary.txt
